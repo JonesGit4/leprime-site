@@ -5,6 +5,7 @@
     { "source": "/robots.txt", "destination": "/robots.txt" },
     { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
     { "source": "/favicon.ico", "destination": "/favicon.ico" },
+    { "source": "/google7a847de739270bcd.html", "destination": "/google7a847de739270bcd.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ],
   "headers": [
