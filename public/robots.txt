@@ -1,0 +1,7 @@
+# LE Prime Acabamentos
+# https://www.leprimeacabamentos.com.br
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.leprimeacabamentos.com.br/sitemap.xml
