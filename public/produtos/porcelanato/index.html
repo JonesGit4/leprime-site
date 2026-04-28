@@ -119,7 +119,19 @@
       <nav class="hidden md:flex items-center gap-8">
         <a href="/" title="Página inicial" class="text-gray-300 hover:text-white font-medium transition-colors">Início</a>
         <a href="/#servicos" title="Nossos serviços" class="text-gray-300 hover:text-white font-medium transition-colors">Serviços</a>
-        <a href="/#produtos" title="Nossos produtos" class="text-white font-medium transition-colors">Produtos</a>
+        <div class="relative group">
+          <a href="/#produtos" title="Nossos produtos" class="text-white font-medium transition-colors inline-flex items-center gap-1">Produtos<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5"><polyline points="6 9 12 15 18 9"/></svg></a>
+          <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <div class="bg-[#243842] border border-[#3d5a6c]/40 rounded-lg shadow-xl py-2 min-w-[220px]">
+            <a href="/produtos/piso-laminado" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-[#1a2830]/80 transition-colors">Piso Laminado</a>
+            <a href="/produtos/piso-vinilico" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-[#1a2830]/80 transition-colors">Piso Vinílico</a>
+            <a href="/produtos/porcelanato" class="block px-4 py-2 text-sm text-white font-medium bg-[#1a2830]/60 transition-colors">Porcelanato</a>
+            <a href="/produtos/revestimentos-ceramicos" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-[#1a2830]/80 transition-colors">Revestimentos Cerâmicos</a>
+            <a href="/produtos/rodapes-acabamentos" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-[#1a2830]/80 transition-colors">Rodapés e Acabamentos</a>
+            <a href="/produtos/pisos-area-externa" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-[#1a2830]/80 transition-colors">Pisos para Área Externa</a>
+            </div>
+          </div>
+        </div>
         <a href="/#marcas" title="Marcas parceiras" class="text-gray-300 hover:text-white font-medium transition-colors">Marcas</a>
         <a href="/#contato" title="Contato" class="text-gray-300 hover:text-white font-medium transition-colors">Contato</a>
       </nav>
@@ -136,6 +148,12 @@
         <a href="/" class="text-gray-300 hover:text-white font-medium px-2">Início</a>
         <a href="/#servicos" class="text-gray-300 hover:text-white font-medium px-2">Serviços</a>
         <a href="/#produtos" class="text-white font-medium px-2">Produtos</a>
+        <a href="/produtos/piso-laminado" class="text-gray-400 hover:text-white text-sm px-6">Piso Laminado</a>
+        <a href="/produtos/piso-vinilico" class="text-gray-400 hover:text-white text-sm px-6">Piso Vinílico</a>
+        <a href="/produtos/porcelanato" class="text-white text-sm px-6 font-medium">Porcelanato</a>
+        <a href="/produtos/revestimentos-ceramicos" class="text-gray-400 hover:text-white text-sm px-6">Revestimentos Cerâmicos</a>
+        <a href="/produtos/rodapes-acabamentos" class="text-gray-400 hover:text-white text-sm px-6">Rodapés e Acabamentos</a>
+        <a href="/produtos/pisos-area-externa" class="text-gray-400 hover:text-white text-sm px-6">Pisos para Área Externa</a>
         <a href="/#marcas" class="text-gray-300 hover:text-white font-medium px-2">Marcas</a>
         <a href="/#contato" class="text-gray-300 hover:text-white font-medium px-2">Contato</a>
         <a href="https://wa.me/5551996181219" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-md text-sm font-medium h-9 px-4 bg-[#4fb8a8] text-white hover:bg-[#3da897] mt-2">Fale Conosco</a>
@@ -148,13 +166,13 @@
   <!-- Hero / Breadcrumb -->
   <section class="relative py-16 md:py-24 overflow-hidden">
     <div class="absolute inset-0 z-0">
-      <img alt="Porcelanato polido e acetinado para sala e cozinha — loja de pisos em Canoas RS" decoding="async" class="object-cover w-full h-full" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="/porcelanato.webp" fetchpriority="high"/>
-      <div class="absolute inset-0 bg-[#1a2830]/80"></div>
+      <img alt="Porcelanato polido e acetinado para sala e cozinha — loja de pisos em Canoas RS" decoding="async" class="object-cover w-full h-full" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent;filter:blur(2px);transform:scale(1.05)" src="/porcelanato.webp" fetchpriority="high"/>
+      <div class="absolute inset-0 bg-gradient-to-r from-[#1a2830] via-[#1a2830]/95 to-[#1a2830]/85"></div>
     </div>
     <div class="container mx-auto px-4 relative z-10">
       <!-- Breadcrumb -->
       <nav aria-label="Breadcrumb" class="mb-6">
-        <ol class="flex items-center gap-2 text-sm text-gray-400">
+        <ol class="flex items-center gap-2 text-sm text-gray-300" style="text-shadow: 0 1px 3px rgba(0,0,0,0.5)">
           <li><a href="/" class="hover:text-white transition-colors">Início</a></li>
           <li><span class="mx-1">/</span></li>
           <li><a href="/#produtos" class="hover:text-white transition-colors">Produtos</a></li>
@@ -162,8 +180,8 @@
           <li class="text-white font-medium">Porcelanato</li>
         </ol>
       </nav>
-      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 text-balance">Porcelanato em Canoas e Região Metropolitana</h1>
-      <p class="text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl">O porcelanato é o revestimento mais versátil e resistente do mercado, indicado para pisos e paredes em ambientes internos e externos. Na <strong>LE Prime Acabamentos</strong>, trabalhamos com porcelanatos da <strong>Delta</strong> e outras marcas líderes, oferecendo uma ampla variedade de acabamentos — polido, acetinado, rústico e natural — nos formatos mais procurados.</p>
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 text-balance" style="text-shadow: 0 2px 8px rgba(0,0,0,0.7)">Porcelanato em Canoas e Região Metropolitana</h1>
+      <p class="text-lg md:text-xl text-gray-200 leading-relaxed max-w-3xl" style="text-shadow: 0 1px 4px rgba(0,0,0,0.6)">O porcelanato é o revestimento mais versátil e resistente do mercado, indicado para pisos e paredes em ambientes internos e externos. Na <strong>LE Prime Acabamentos</strong>, trabalhamos com porcelanatos da <strong>Delta</strong> e outras marcas líderes, oferecendo uma ampla variedade de acabamentos — polido, acetinado, rústico e natural — nos formatos mais procurados.</p>
       <div class="flex flex-col sm:flex-row gap-4 mt-8">
         <a href="https://wa.me/5551996181219?text=Olá%21%20Gostaria%20de%20saber%20mais%20sobre%20Porcelanato" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium h-12 rounded-md px-8 bg-[#25D366] text-white hover:bg-[#128C7E] transition-all shadow-lg">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
