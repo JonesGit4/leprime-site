@@ -6,6 +6,12 @@
     { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
     { "source": "/favicon.ico", "destination": "/favicon.ico" },
     { "source": "/google7a847de739270bcd.html", "destination": "/google7a847de739270bcd.html" },
+    { "source": "/produtos/piso-laminado", "destination": "/produtos/piso-laminado/index.html" },
+    { "source": "/produtos/piso-vinilico", "destination": "/produtos/piso-vinilico/index.html" },
+    { "source": "/produtos/porcelanato", "destination": "/produtos/porcelanato/index.html" },
+    { "source": "/produtos/revestimentos-ceramicos", "destination": "/produtos/revestimentos-ceramicos/index.html" },
+    { "source": "/produtos/rodapes-acabamentos", "destination": "/produtos/rodapes-acabamentos/index.html" },
+    { "source": "/produtos/pisos-area-externa", "destination": "/produtos/pisos-area-externa/index.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ],
   "headers": [
@@ -43,6 +49,12 @@
     },
     {
       "source": "/index.html",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/produtos/(.*)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
       ]
